@@ -30,6 +30,7 @@ services:
       - VIRTUAL_HOST=portainer.yourdomain.com
       - VIRTUAL_PORT=9000
     ports:
+      - 9000:9000
       - 8000:8000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -61,6 +62,7 @@ services:
       - VIRTUAL_HOST=portainer.yourdomain.com
       - VIRTUAL_PORT=9000
     ports:
+      - 9000:9000
       - 8000:8000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -160,6 +162,7 @@ services:
       - VIRTUAL_HOST=portainer.yourdomain.com
       - VIRTUAL_PORT=9000
     ports:
+      - 9000:9000
       - 8000:8000
     networks:
       - proxy
@@ -224,6 +227,7 @@ services:
       - VIRTUAL_HOST=portainer.yourdomain.com
       - VIRTUAL_PORT=9000
     ports:
+      - 9000:9000
       - 8000:8000
     networks:
       - proxy
